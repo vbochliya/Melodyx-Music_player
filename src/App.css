@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.main_container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #181818;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.middle_area{
+    width: 100%;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-grow: 1;
+    height: calc(100vh - 3.5rem);
+}
+
+
+
+
+
+
+@media (max-width: 575px) {
+    .middle_area {
+      flex-direction: column;
+      overflow-y: scroll;
+    }
+
+  }
