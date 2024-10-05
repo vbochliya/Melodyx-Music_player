@@ -28,6 +28,7 @@ export default function FooterPlayer({
     setcurrentTime(0);
     if (!isFirstRenderOfDom.current) {
       audioElem.current.play();
+      setisPlaying(false);
     } else {
       isFirstRenderOfDom.current = false;
     }
