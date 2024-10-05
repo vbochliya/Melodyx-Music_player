@@ -1,0 +1,109 @@
+.footer_main_container{
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    padding: 0 .5rem;
+    display: flex;
+    background-color: black;
+}
+.player_about{
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+.music_img{
+    width: 3rem;
+    height: 3rem;
+    margin:1rem;
+    border-radius: 10%;
+}
+.title{
+    margin-top: 1rem;
+    width: 100%;
+    height: 3rem;
+}
+
+.nevigater{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nevigate_options{
+    width: 40%;
+    height: 60%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.nevigate_options button{
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14, 14, 14);
+    border-radius: 50%;
+}
+.nevigate_options button:hover{
+    background-color: rgb(92, 92, 92);
+}
+.slider{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.slider span{
+    width: 2rem;
+}
+.slider_input{
+    width: 80%;
+    margin: 0 .5rem;
+}
+.options{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.options button{
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14, 14, 14);
+    border:none;
+    margin-right: 1rem;
+}
+.options button:hover{
+    background-color: rgb(92, 92, 92);
+}
+
+
+
+
+@media (max-width:675px) {
+    .title{
+     display: none;
+    }
+    .player_about{
+        width: auto;
+
+    }
+    .nevigater{
+        flex-grow: 1;
+    }
+    .options{
+        width: auto;
+    }
+}

@@ -1,0 +1,38 @@
+li{
+    width: 100%;
+    height: 4.5rem;
+    padding: .25rem .5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: left;
+    margin: .25rem 0;
+    transition: background-color .1s ease;
+  }
+  li:hover{
+    background-color: rgb(114, 114, 114);
+  }
+  li img{
+        width: 4rem;
+        height: 4rem;
+        margin-right: .5rem;
+        border-radius: 50%;
+  }
+  .card_data{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .card_data_title{
+    width: 100%;
+    height: 1.5rem;
+    font-size: 1.10rem;
+
+  }
+  .card_data_subtitle{
+    width: 100%;
+    height: 1rem;
+    font-size: .9rem;
+    color: rgb(153, 153, 153);
+  }

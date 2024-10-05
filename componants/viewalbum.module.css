@@ -1,0 +1,99 @@
+
+
+.main_view_container{
+    flex-grow: 1;
+    flex-shrink: 0;
+    overflow-y: auto; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.into_title_big{
+    margin-top: 7rem;
+    font-size: 4rem;
+    padding: 0 1rem;
+    z-index: 2;
+}
+.album_operations{
+    width: 100%;
+    height: 5rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(66, 65, 65,.97);
+    z-index: 2;
+}
+.album_opration_btns{
+    transition: background-color .25s ;
+}
+.album_opration_btns:hover{
+    background-color: rgb(66, 65, 65,.97);
+}
+.play_all_button{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: green;
+    border: none;
+    margin-right: 2rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.follow_button{
+    height: 2rem;
+    width: 8rem;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: .1rem;
+    margin-right: 2rem;
+    font-size: 1.25rem;
+
+}.follow_button:hover{
+ 
+    background-color: rgba(179, 179, 179, 0.97);
+}
+.option_button{
+    height: 3rem;
+    width: 2rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 10%;
+    font-size: 1.5rem;
+
+}
+.song_list{
+    width: 100%;
+    padding: 1.5rem;
+    background-color: rgb(66, 65, 65,.97);
+    z-index: 2;
+}
+.album_song_arranging_order{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+
+
+@media (max-width: 900px) {
+    .into_title_big{
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+@media (max-width: 575px) {
+    .main_view_container{
+        order: 1;
+        max-height: 45rem;
+    }
+}
