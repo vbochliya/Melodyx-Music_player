@@ -20,15 +20,12 @@ export default function FooterPlayer({
 
   const isFirstRenderOfDom = useRef(true);
   useEffect(() => {
-    audioElem.current.pause();
-    setisPlaying(false);
     const index = songs.findIndex((x) => x.url === currentSongOutsideUrl);
     setcurrentSong(songs[index]);
     setcurrentSongTitle(songs[index].title);
     setcurrentTime(0);
     if (!isFirstRenderOfDom.current) {
       audioElem.current.play();
-      setisPlaying(false);
     } else {
       isFirstRenderOfDom.current = false;
     }
